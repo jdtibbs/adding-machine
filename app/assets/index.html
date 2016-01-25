@@ -132,7 +132,7 @@
             </div>
 
             <div class="mdl-cell mdl-cell--12-col">
-              <table class="mdl-data-table jdt-tape-table">
+              <table class="mdl-data-table" style="width:100%;">
                 <thead>
                   <tr>
                     <th class="mdl-data-table__cell--non-numeric">
@@ -149,27 +149,48 @@
                 </tbody>
               </table>
             </div>
-
           </div>
         </div>
       </section>
 
       <section class="mdl-layout__tab-panel" id="about-panel">
         <div class="page-content">
-          <p>TODO</p>
-        </div>
+          <div class="mdl-grid jdt-grid">
+
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>A Simple Adding Machine</h4>
+              <h5>Input Tab</h5>
+              <p>Enter numbers by clicking the numeric buttons or by using the keyboard.</p>
+              <p>Click the Enter button or press the Enter key on the keyboard to add the number entered to the total.</p>
+              <p>Use the backspace button or the Delete key to remove the last digit clicked or typed.</p>
+              <p>Use the Clear button or the Esc key to clear all numbers entered and reset the total to zero.</p>
+              <h5>Tape Tab</h5>
+              <p>This tab shows all the numbers entered.</p>
+              <p>You can subtract a number from the total by clicking the checkbox to the left of it.</p>
+              <p>You can add a number to the total by unchecking it.</p>
+              <p>You can subtract all numbers from the total by clicking the checkbox in the column heading.</p>
+              <p>You can add all numbers to the total by unchecking the checkbox in the column heading.</p>
+            </div>
+
+            <div class="mdl-cell mdl-cell--12-col">
+              <div><a href="https://github.com/jdtibbs/adding-machine">GitHub</a>
+              </div>
+              <div>&nbsp;</div>
+              <div>Copyright 2015 Jack Tibbs</div>
+            </div>
+
       </section>
 
     </main>
 
-  </div>
+    </div>
 
 
-  <script type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
-  <script type="text/javascript" src="/app.js"></script>
-  <script>
-  require('app').init();
-  </script>
+    <script type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <script type="text/javascript" src="/app.js"></script>
+    <script>
+    require('app').init();
+    </script>
 
 </body>
 
