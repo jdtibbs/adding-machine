@@ -93,6 +93,17 @@
 					return {
 						total: total()
 					};
+				},
+				removeAll: function(isRemove) {
+					service.removed.length = 0;
+					if (isRemove) {
+						service.numbers.forEach(function(value, index) {
+							service.removed.push(index);
+						});
+					}
+					return {
+						total: total()
+					};
 				}
 			};
 		}

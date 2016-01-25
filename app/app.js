@@ -45,6 +45,8 @@
 
 					eventService.addEventListener(documentService.getElementById('enter'), 'click', enterButtonClick);
 
+					// handle the tape tab subtract checkbox.
+					eventService.addEventListener(documentService.getElementById('removeAll'), 'change', removeAllChanged);
 				}
 			}
 		};
@@ -108,5 +110,20 @@
 					}
 				}
 			});
+		}
+
+		function removeAllChanged(event) {
+			var isRemove = false;
+			nodeListService.forEach(tapeTableBodyElement.querySelectorAll('.mdl-js-checkbox'), removeAllCallback);
+
+			function removeAllCallback(node) {
+				if (event.target.checked) {
+					isRemove = true;
+					node.MaterialCheckbox.check();
+				} else {
+					node.MaterialCheckbox.uncheck();
+				}
+			}
+			updateView(addMachine.removeAll(isRemove));
 		}
 	})();

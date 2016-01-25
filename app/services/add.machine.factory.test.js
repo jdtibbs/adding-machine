@@ -123,3 +123,34 @@ test('add.machine.factory remove', function(t) {
 	t.equal(addMachine.remove(0, false).total, 6, 'restore number');
 
 });
+
+test('add.machine.factory removeAll', function(t) {
+	t.plan(6);
+
+	var addMachine = getAddMachine();
+
+	t.equal(addMachine.input('5').input, '5', 'input 1st number');
+
+	t.deepEqual(addMachine.enter(), {
+		isValid: true,
+		index: 0,
+		input: 0,
+		number: 5,
+		total: 5
+	}, 'enter number');
+
+	t.equal(addMachine.input('10').input, '10', 'input 2nd number');
+
+	t.deepEqual(addMachine.enter(), {
+		isValid: true,
+		index: 1,
+		input: 0,
+		number: 10,
+		total: 15
+	}, 'enter number');
+
+	t.equal(addMachine.removeAll(true).total, 0, 'remove all numbers');
+
+	t.equal(addMachine.removeAll(false).total, 15, 'restore all numbers');
+
+});
