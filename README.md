@@ -9,7 +9,7 @@ Running [here](https://jdt-adding-machine.herokuapp.com/) on Heroku.
 ## Information
 
 * Brunch
-	* Provides build and develeopment hot re-loading.
+	* Provides build and development hot re-loading.
     * Configuration: 
     	* See brunch-config.js
     	* Brunch defaults to using CommonJS modules.
