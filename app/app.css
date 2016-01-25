@@ -1,0 +1,30 @@
+.jdt-grid {
+	max-width: 380px;
+}
+.jdt-flex-container {
+	text-align: center;
+	color: white;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: nowrap;
+}
+.jdt-flex-item {
+	flex-grow: 1;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.jdt-button {
+	/**/
+}
+.jdt-number-button {
+	/**/
+}
+.jdt-total {
+	margin-right: 5px;
+	text-align: right;
+}
+

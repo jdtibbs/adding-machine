@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.deep_purple-purple.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="/common.css">
+
+  <title>Adding Machine</title>
+</head>
+
+<body>
+
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Adding Machine</span>
+        <div class="mdl-layout-spacer"></div>
+      </div>
+      <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+        <a href="#add-panel" class="mdl-layout__tab is-active">Input</a>
+        <a href="#tape-panel" class="mdl-layout__tab">Tape</a>
+        <a href="#about-panel" class="mdl-layout__tab">About</a>
+      </div>
+    </header>
+
+    <main class="mdl-layout__content">
+
+      <section class="mdl-layout__tab-panel is-active" id="add-panel">
+        <div class="page-content">
+          <div class="mdl-grid jdt-grid">
+
+            <div class="mdl-cell mdl-cell--12-col">
+              <p class="jdt-total">Total:&nbsp;
+                <span id="total">0</span>
+              </p>
+            </div>
+
+            <div class="mdl-cell mdl-cell--12-col">
+              <p id="input" class="jdt-total">0</p>
+            </div>
+
+            <div class="mdl-cell mdl-cell--12-col jdt-flex-container">
+              <button id="7" type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored jdt-number-button jdt-flex-item">
+                7
+              </button>
+              <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored jdt-number-button jdt-flex-item">
+                8
+              </button>
+              <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored jdt-number-button jdt-flex-item">
+                9
+              </button>
+            </div>
+
+            <div class="mdl-cell mdl-cell--12-col jdt-flex-container">
+              <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored jdt-number-button jdt-flex-item">
+                4
+              </button>
+              <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored jdt-number-button jdt-flex-item">
+                5
+              </button>
+              <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored jdt-number-button jdt-flex-item">
+                6
+              </button>
+            </div>
+
+            <div class="mdl-cell mdl-cell--12-col jdt-flex-container">
+              <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored jdt-number-button jdt-flex-item">
+                1
+              </button>
+              <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored jdt-number-button jdt-flex-item">
+                2
+              </button>
+              <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored jdt-number-button jdt-flex-item">
+                3
+              </button>
+            </div>
+
+            <div class="mdl-cell mdl-cell--12-col jdt-flex-container">
+              <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored jdt-number-button jdt-flex-item">
+                0
+              </button>
+              <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored jdt-number-button jdt-flex-item">
+                .
+              </button>
+              <button id="del" type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored jdt-button jdt-flex-item">
+                <i class="material-icons">backspace</i>
+              </button>
+              <div class="mdl-tooltip" for="del">
+                Keyboard: Del
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--12-col jdt-flex-container">
+              <button id="enter" type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored jdt-button jdt-flex-item">
+                ENTER
+              </button>
+              <button id="clear" type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored jdt-button jdt-flex-item">
+                CLEAR
+              </button>
+              <div class="mdl-tooltip" for="clear">
+                Keyboard: Esc
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--12-col jdtflex-container">
+              <p id="decimalsLabel" class="jdt-flex-item">Decimals: 2</p>
+            </div>
+
+            <div class="mdl-cell mdl-cell--12-col jdtflex-container">
+              <!-- <p style="width:380px;"> -->
+              <p class="jdt-flex-item">
+                <input id="decimals" class="mdl-slider mdl-js-slider" type="range" min="0" max="10" value="2" tabindex="0">
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="mdl-layout__tab-panel" id="tape-panel">
+        <div class="page-content">
+          <div class="mdl-grid jdt-grid">
+
+            <div class="mdl-cell mdl-cell--12-col">
+              <p class="jdt-total">Total:&nbsp;
+                <span id="tapeTotal">0</span>
+              </p>
+            </div>
+
+            <div class="mdl-cell mdl-cell--12-col">
+              <table class="mdl-data-table">
+                <thead>
+                  <tr>
+                    <th class="mdl-data-table__cell--non-numeric">Remove</th>
+                    <th>Value</th>
+                  </tr>
+                </thead>
+                <tbody id="tapeTableBody">
+                  <!-- see javascript -->
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="mdl-layout__tab-panel" id="about-panel">
+        <div class="page-content">
+          <p>TODO</p>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <script type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+  <script type="text/javascript" src="/app.js"></script>
+  <script>
+  require('app').init();
+  </script>
+
+</body>
+
+</html>

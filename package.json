@@ -1,0 +1,34 @@
+{
+	"name": "adding-machine",
+	"version": "1.0.0",
+	"description": "A simple adding machine.",
+	"main": "index.js",
+	"scripts": {
+		"start": "node server.js",
+		"build": "brunch build --production",
+		"postinstall": "brunch build --production",
+		"test": "tape app/**/*test.js"
+	},
+	"author": "jdtibbs",
+	"license": "ISC",
+	"engines": {
+		"node": "4.2.4"
+	},
+	"scripts": {
+		"start": "node server.js",
+		"build": "brunch build --production",
+		"postinstall": "brunch build --production",
+		"test": "tape app/**/*test.js"
+	},
+	"dependencies": {
+		"brunch": "^2.2.0",
+		"clean-css-brunch": "^1.8.0",
+		"css-brunch": "^1.7.0",
+		"javascript-brunch": "^1.8.0",
+		"uglify-js-brunch": "^1.7.8"
+	},
+	"devDependencies": {
+		"auto-reload-brunch": "^1.8.1",
+		"tape": "^4.4.0"
+	}
+}

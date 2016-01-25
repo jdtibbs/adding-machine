@@ -1,0 +1,6 @@
+# This file causes files to be removed after you push code to Heroku and before the buildpack runs. This lets you prevent large files from being included in the final slug.
+
+**/.env
+**/*.md
+**/*.test.js
+**/*.yml
