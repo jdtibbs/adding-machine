@@ -82,6 +82,8 @@
 		function clearButtonClick() {
 			updateView(addMachine.clear());
 			tapeService.clear(tapeTableBodyElement);
+			// insure subtract checkbox is unchecked.
+			documentService.querySelector('.mdl-js-checkbox').MaterialCheckbox.uncheck();
 		}
 
 		function enterButtonClick() {
