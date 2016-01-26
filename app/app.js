@@ -23,6 +23,10 @@
 				eventService.addEventListener(document, 'DOMContentLoaded', addEvents);
 
 				function addEvents() {
+					// set copyright year.
+					nodeService.textContent(documentService.getElementById('copyright'), new Date().getFullYear());
+
+					// set dom element variables for events.
 					totalElement = documentService.getElementById('total');
 					tapeTotalElement = documentService.getElementById('tapeTotal');
 					inputElement = documentService.getElementById('input');
