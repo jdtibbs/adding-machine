@@ -4,11 +4,8 @@
 	var service = {
 		addEventListener: function(element, event, callback) {
 			element.addEventListener(event, function(event) {
-				if (event.defaultPrevented) {
-					return;
-				}
+				event.stopPropagation();
 				callback(event);
-				event.preventDefault();
 			}, true);
 		}
 	};
