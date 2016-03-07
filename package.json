@@ -3,12 +3,6 @@
 	"version": "1.0.0",
 	"description": "A simple adding machine.",
 	"main": "index.js",
-	"scripts": {
-		"start": "node server.js",
-		"build": "brunch build --production",
-		"postinstall": "brunch build --production",
-		"test": "tape app/**/*test.js"
-	},
 	"author": "jdtibbs",
 	"license": "ISC",
 	"engines": {

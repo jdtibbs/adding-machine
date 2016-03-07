@@ -40,7 +40,7 @@
 					nodeListService.forEach(documentService.querySelectorAll('.jdt-number-button'), numberButtonClick);
 
 					// handle Delete, Enter, and Escape keydown.
-					eventService.addEventListener(window, 'keydown', keydownEvent);
+					eventService.addEventListener(document, 'keydown', keydownEvent);
 
 					// handle Delete, Enter, and Clear button clicks.
 					eventService.addEventListener(documentService.getElementById('del'), 'click', deleteButtonClick);
